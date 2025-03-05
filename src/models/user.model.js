@@ -43,7 +43,7 @@ const userSchema = new Schema({
         type:string
     }
 },{timestamps:true})
-
+//*******    MIDDLEWARE *****jane s phle mujse milkr ja(means hme kuchb save karna hai databse m to just save hone s phle mujse milkr jana hoga)
 // hooks pre ko hooks bolte hai yeh middleware he hote aur middleware me hm pre (this."yeh hooks hote hai") hooks ka use karrhe hai.(data save hone s phle yeh hooks chle)
 // password incript before save on my database
 userSchema.pre("save", async function (next){
