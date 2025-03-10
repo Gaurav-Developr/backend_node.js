@@ -23,11 +23,11 @@ const userSchema = new Schema({
         index:true
     },
     avatar:{
-        type:String,   //cloudinary url(third party m rakhte hai bas vha s URL aajata hai)
+        type: String,   //cloudinary url(third party m rakhte hai bas vha s URL aajata hai)
         required:true,
     },
     coverImage:{
-        type:String, //cloudinary url(third party m rakhte hai bas vha s URL aajata hai)
+        type: String, //cloudinary url(third party m rakhte hai bas vha s URL aajata hai)
     },
     watchHistory:[
         {

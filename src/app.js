@@ -19,6 +19,17 @@ app.use(express.static("public"));
 app.use(express.cookieParser);
 
 
+// Routes Imported
+import userrouter from "./routes/user.routes.js";
+
+
+// routes declaration
+//https:localhost:8080/api/v1/users -> iske baad yeh seedha userrouter m chle jayega jha yeh bnjayega (https:localhost:8080/api/v1/users/register)
+app.use("/api/v1/users", userrouter)
+
+
+
+
 
 
 
