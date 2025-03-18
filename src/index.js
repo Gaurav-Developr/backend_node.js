@@ -1,24 +1,21 @@
-// import mongoose from "mongoose";
-// import { DB_NAME } from "./constants";
 import  db  from "./db/db.js";
 import dotenv from "dotenv";
+import { app } from "./app.js";
 
 dotenv.config({
     path:"./env"
 })
 
 db()
-
-
-.then(()=> {
+    .then(()=> {
     app.listen(process.env.Port ||8000, () =>{
         console.log(`Server is running on port ${process.env.Port}`);
     } )
-})
-.catch((error) => {
+    })
+    .catch((error) => {
     console.log("Database connection error on index.js file !!",error)
-}
-)
+    }
+    )
 
 
 // ;( async () => {
